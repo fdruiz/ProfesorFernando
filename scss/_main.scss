@@ -1,0 +1,191 @@
+@each $f,$d in $weight {
+    .fontOne-#{$f}{
+        font-family: $fontOne;
+        font-weight: $d;
+    }
+}
+
+@each $f,$d in $size {
+    .text-#{$f}{
+        font-size: $d;
+    }
+}
+
+$breakpoint-large: "(min-width: 1024px)";
+$breakpoint-medium: "(max-width: 1024px)";
+$breakpoint-small: "(max-width: 768px)";
+$breakpoint-xsmall: "(max-width: 576px)";
+
+@mixin portada1 ($vp) {
+    @if $vp == $breakpoint-large {
+        @media #{$breakpoint-large} {
+            font-size: 5.2em;
+            height: 16vh;
+            margin-top: 3vh;
+            margin-left: 2vh;
+        }
+    }
+    @if $vp == $breakpoint-medium {
+        @media #{$breakpoint-medium} {
+            font-size: 4em;
+            height: 10vh;
+            margin-left: 2vh;
+            margin-bottom: -0.8vh;
+        }
+    }
+    @if $vp == $breakpoint-small {
+        @media #{$breakpoint-small} {
+            font-size: 3.5em;
+            height: 10vh;
+            margin-top: 1vh;
+        }
+    }
+    @if $vp == $breakpoint-xsmall {
+        @media #{$breakpoint-xsmall} {
+            font-size: 1.4em;
+            height: 10vh;
+            margin-top: 0.8em;
+            margin-bottom: -0.6em;
+        }
+    }
+}
+
+@mixin portada2 ($vp) {
+    @if $vp == $breakpoint-large {
+        @media #{$breakpoint-large} {
+            height: 16vh;
+        }
+    }
+    @if $vp == $breakpoint-medium {
+        @media #{$breakpoint-medium} {
+            height: 10vh;
+        }
+    }
+    @if $vp == $breakpoint-small {
+        @media #{$breakpoint-small} {
+            height: 10vh;
+            margin-bottom: 1vh;
+        }
+    }
+    @if $vp == $breakpoint-xsmall {
+        @media #{$breakpoint-xsmall} {
+            height: 10vh;
+        }
+    }
+}
+
+.header__portada{
+    background-color: $raz;
+    .portada1{
+        font-family: $fontOne;
+        font-style: italic;
+        font-weight: bold;
+        color: $dva;
+        text-shadow: 2px 2px  $colorFondo;
+        text-decoration: none;   
+        @include portada1($breakpoint-large);
+        @include portada1($breakpoint-medium);
+        @include portada1($breakpoint-small);
+        @include portada1($breakpoint-xsmall);
+    }
+    .portada2{
+        background-image: url("../images/header2.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include portada2($breakpoint-large);
+        @include portada2($breakpoint-medium);
+        @include portada2($breakpoint-small);
+    }
+}
+.header__navbar{
+	background-color: $dva !important;
+    #navbarDropdown{
+        color: $colorFondo !important;
+    }
+    #navbarDropdown:hover{
+        color: $raz !important;
+    }
+    .dropdown-item{
+        color: black !important;
+        &:hover{
+            background-color: $raz !important;
+            color: $colorFondo !important;
+            font-weight: bold;
+            transform: scale(1.2);
+        }
+    }
+    #contactoItem {
+        color: $colorFondo;
+        &:hover{color: $raz;}
+    }
+    .navbar-toggler {
+        background-color: $colorFondo !important;
+        border: 1px solid $raz;
+        .navbar-toggler-icon {
+            background-image: 
+            url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34, 19, 74, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }    
+    ul{
+        font-family: $fontOne;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.5;
+    }
+}
+
+h1{
+	width: 100vw;
+	font-family: $fontTwo;
+	font-size: 50px !important;
+	color: #22134a !important;
+	text-align: center;
+	text-decoration: underline;
+    @media only screen and (max-width: 480px) {
+        font-size: 30px !important;}
+}
+
+h2{
+	color: $dva;
+	font-family: 'Newsreader', serif;
+	font-size: 25px;
+}
+
+h3{
+	font-family: 'Newsreader', serif;
+	font-style: italic;
+	font-size: 30px;
+}
+
+.titulo{
+	width: 100vw;
+	font-family: $fontTwo;
+	font-size: 50px !important;
+	color: #22134a !important;
+	text-align: center;
+	text-decoration: underline;
+    @media only screen and (max-width: 480px) {
+        font-size: 30px !important;}
+}
+
+ul{
+	color: $dva;
+	font-family: 'Newsreader', serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.5;
+	list-style-image: url("../images/atomitovioleta.png");
+	list-style-position: inside;
+    @media only screen and (max-width: 480px) {
+        font-size: 18px;
+		padding: 0px;
+    }
+}
+
+thead{
+	font-family: 'Goblin One', serif;
+	color: #22134a;
+	background-color: grey;
+	font-weight: bold;
+	text-align: center;
+}

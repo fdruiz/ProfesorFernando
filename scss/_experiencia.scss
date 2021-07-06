@@ -1,0 +1,194 @@
+.experiencia__colegios{
+	color: $dva;
+	font-family: $fontOne;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 5px;
+    @media only screen and (max-width: 480px) {
+        font-size: 16px;
+        padding-left: 0%;
+    }
+}
+.experiencia__et31{
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $colorFondo;
+	min-width: 1000px;
+	border: 10px;
+	border-style: solid;
+	border-color: $raz;
+	.fotoEt31{
+		background-image: url("../images/et31.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		min-height: 100px;
+		min-width: 100px;
+		border: 5px solid $dva;
+	}
+    @media only screen and (max-width: 480px) {
+        min-width: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.experiencia__et15{
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $colorFondo;
+	min-width: 1000px;
+	border: 10px;
+	border-style: solid;
+	border-color: $raz;
+	.fotoEt15{
+		background-image: url("../images/et15.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		min-height: 100px;
+		min-width: 100px;
+		border: 5px solid $dva;
+	}
+    @media only screen and (max-width: 480px) {
+        min-width: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.experiencia__et27{
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $colorFondo;
+	min-width: 1000px;
+	border: 10px;
+	border-style: solid;
+	border-color: $raz;
+	.fotoEt27{
+		background-image: url("../images/et27.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		min-height: 100px;
+		min-width: 100px;
+		border: 5px solid $dva;
+	}
+    @media only screen and (max-width: 480px) {
+        min-width: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.experiencia__et5{
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $colorFondo;
+	min-width: 1000px;
+	border: 10px;
+	border-style: solid;
+	border-color: $raz;
+	.fotoEt5{
+		background-image: url("../images/et5.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		min-height: 100px;
+		min-width: 100px;
+		border: 5px solid $dva;
+	}
+    @media only screen and (max-width: 480px) {
+        min-width: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.experiencia__et1{
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $colorFondo;
+	min-width: 1000px;
+	border: 10px;
+	border-style: solid;
+	border-color: $raz;
+	.fotoEt1{
+		background-image: url("../images/et1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: right;
+		min-height: 100px;
+		min-width: 100px;
+		border: 5px solid $dva;
+	}
+    @media only screen and (max-width: 480px) {
+        min-width: 350px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.experiencia__listaTitulos{
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $colorFondo;
+	min-width: 1000px;
+	border: 20px solid $raz;
+	.atomoVioleta{
+		background-image: url("../images/atomovioleta.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 200px;
+		min-width: 200px;
+		border: 5px solid $dva;
+		@media only screen and (max-width: 480px) {
+			min-height: 320px;
+			min-width: 320px;
+			border: 10px solid $dva;
+		}
+	}
+	.chemie{
+		background-image: url("../images/chemie.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 200px;
+		min-width: 200px;
+		border: 5px solid $dva;
+		@media only screen and (max-width: 480px) {
+			min-height: 320px;
+			min-width: 320px;
+			border: 10px solid $dva;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+        min-width: 350px;
+        justify-content: center;
+		margin: 0;
+    }
+}

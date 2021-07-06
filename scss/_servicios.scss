@@ -1,0 +1,134 @@
+.servicios__cursos{
+	margin-left: 10px;
+	font-family: $fontOne;
+	font-style: italic;
+	color: black;
+	font-size: 30px;
+	text-align: left; 
+	line-height: 1.5;
+	max-width: 1100px;
+    @media only screen and (max-width: 480px) {
+        font-size: 18px;
+        text-align: justify;
+        margin: 5%;
+    }
+}
+
+.servicios__apoyoCursos{
+	margin: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url("../images/ciencia.jpg");
+	min-width: 1000px;
+	min-height: 200px;
+	border: 20px;
+	border-style: solid;
+	border-color: $raz;
+    @media only screen and (max-width: 480px) {
+        margin: 0%;
+        min-width: 300px;
+        justify-content: center;
+    }
+}
+
+.servicios__bond{
+	background-image: url("../images/bond.png");
+	background-color: $colorFondo;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	min-width: 200px;
+	border: 5px solid $dva;
+    @media only screen and (max-width: 480px) {
+        min-height: 320px;
+	    min-width: 320px;
+        border: 10px solid $dva;
+    }
+}
+
+.servicios__water{
+	background-image: url("../images/water.png");
+	background-color: $colorFondo;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	min-width: 200px;
+	border: 5px solid $dva;
+    @media only screen and (max-width: 480px) {
+        min-height: 320px;
+	    min-width: 320px;
+        border: 10px solid $dva;
+    }
+}
+
+.servicios__aromatic{
+	background-image: url("../images/aromatic.png");
+	background-color: $colorFondo;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	min-width: 200px;
+	border: 5px solid $dva;
+    @media only screen and (max-width: 480px) {
+        min-height: 320px;
+	    min-width: 320px;
+        border: 10px solid $dva;
+    }
+}
+
+.servicios__organic{
+	background-image: url("../images/organic.png");
+	background-color: $colorFondo;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 200px;
+	min-width: 200px;
+	border: 5px solid $dva;
+    @media only screen and (max-width: 480px) {
+        min-height: 320px;
+	    min-width: 320px;
+        border: 10px solid $dva;
+    }
+}
+
+.servicios__flask{
+    background-image: url("../images/flask.png");
+    background-color: $colorFondo;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    min-width: 200px;
+    border: 5px solid $dva;
+	@media only screen and (max-width: 480px) {
+        min-height: 335px;
+	    min-width: 335px;
+        border: 20px solid $dva;
+    }
+}
+
+.servicios__contacto{
+	color: $colorFondo;
+	font-weight: bold;
+	&:hover{
+		background-color: $raz !important;
+		color: $colorFondo !important;
+		text-decoration: none;
+	}
+	&:active{
+		color: $dva !important;
+		font-size: 32px;
+		@media only screen and (max-width: 480px) {
+		font-size: 20px;
+		}
+	}
+}
+
+.servicios__botonContacto{
+    @include start;
+    &:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+}

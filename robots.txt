@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /experiencia.html
+Disallow: /extraform.html
+Disallow: /titulos.html
+Disallow: /recibidos.html

@@ -1,0 +1,42 @@
+.sobreMi{
+	text-align: left;
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: center;
+}
+
+.sobreMi__bio{
+	margin-left: 10px;
+	font-family: $fontOne;
+	font-style: italic;
+	/*font-weight: reg;*/
+	color: black;
+	font-size: 30px;
+	text-align: left; 
+	line-height: 1.5;
+	span{
+		font-weight: bold;
+	}
+    @media only screen and (max-width: 768px) {
+        font-size: 1.2em;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 1.2em;
+    }
+}
+
+.sobreMi__miFoto{
+	background-image: url("../images/ich.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	min-height: 500px;
+	min-width: 500px;
+	border-radius: 50rem !important;
+    @media only screen and (max-width: 480px) {
+        min-width: 300px;
+		min-height: 300px;
+    }
+
+}
