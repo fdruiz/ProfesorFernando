@@ -56,6 +56,7 @@
   .header__portada .portada1 {
     font-size: 4em;
     height: 10vh;
+    margin-top: 0vh;
     margin-left: 2vh;
     margin-bottom: -0.8vh;
   }
@@ -152,11 +153,11 @@
 }
 
 h1 {
-  width: 100vw;
+  width: 95vw;
   font-family: "Goblin One", serif;
   font-size: 50px !important;
   color: #22134a !important;
-  text-align: center;
+  text-align: center !important;
   text-decoration: underline;
 }
 
@@ -179,7 +180,6 @@ h3 {
 }
 
 .titulo {
-  width: 100vw;
   font-family: "Goblin One", serif;
   font-size: 50px !important;
   color: #22134a !important;
@@ -206,6 +206,13 @@ ul {
 @media only screen and (max-width: 480px) {
   ul {
     font-size: 18px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    font-size: 20px;
     padding: 0px;
   }
 }
@@ -239,7 +246,6 @@ thead {
   margin-left: 10px;
   font-family: "Newsreader", serif;
   font-style: italic;
-  /*font-weight: reg;*/
   color: black;
   font-size: 30px;
   text-align: left;
@@ -357,6 +363,13 @@ thead {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .experiencia__colegios {
+    font-size: 19px;
+    padding-left: 0%;
+  }
+}
+
 .experiencia__et31 {
   margin: 5px;
   display: -webkit-box;
@@ -397,6 +410,16 @@ thead {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experiencia__et31 {
+    min-width: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
   }
 }
@@ -445,6 +468,16 @@ thead {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experiencia__et15 {
+    min-width: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+}
+
 .experiencia__et27 {
   margin: 5px;
   display: -webkit-box;
@@ -485,6 +518,16 @@ thead {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experiencia__et27 {
+    min-width: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
   }
 }
@@ -533,6 +576,16 @@ thead {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experiencia__et5 {
+    min-width: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+}
+
 .experiencia__et1 {
   margin: 5px;
   display: -webkit-box;
@@ -577,6 +630,16 @@ thead {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experiencia__et1 {
+    min-width: 700px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+  }
+}
+
 .experiencia__listaTitulos {
   margin: 20px;
   display: -webkit-box;
@@ -597,6 +660,16 @@ thead {
   background-color: #ffffff;
   min-width: 1000px;
   border: 20px solid #22134a;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .experiencia__listaTitulos {
+    margin: 10px;
+    min-width: 700px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .experiencia__listaTitulos .atomoVioleta {
@@ -691,6 +764,18 @@ thead {
   .servicios__apoyoCursos {
     margin: 0%;
     min-width: 300px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .servicios__apoyoCursos {
+    font-size: 18px;
+    text-align: justify;
+    margin: 5%;
+    min-width: 700px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

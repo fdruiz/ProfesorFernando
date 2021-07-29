@@ -29,6 +29,7 @@ $breakpoint-xsmall: "(max-width: 576px)";
         @media #{$breakpoint-medium} {
             font-size: 4em;
             height: 10vh;
+            margin-top: 0vh;
             margin-left: 2vh;
             margin-bottom: -0.8vh;
         }
@@ -135,11 +136,11 @@ $breakpoint-xsmall: "(max-width: 576px)";
 }
 
 h1{
-	width: 100vw;
+	width: 95vw;
 	font-family: $fontTwo;
 	font-size: 50px !important;
 	color: #22134a !important;
-	text-align: center;
+	text-align: center !important;
 	text-decoration: underline;
     @media only screen and (max-width: 480px) {
         font-size: 30px !important;}
@@ -158,7 +159,6 @@ h3{
 }
 
 .titulo{
-	width: 100vw;
 	font-family: $fontTwo;
 	font-size: 50px !important;
 	color: #22134a !important;
@@ -178,6 +178,10 @@ ul{
 	list-style-position: inside;
     @media only screen and (max-width: 480px) {
         font-size: 18px;
+		padding: 0px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 20px;
 		padding: 0px;
     }
 }
